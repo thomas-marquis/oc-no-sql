@@ -1,0 +1,27 @@
+[2018-07-25T07:16:30,427][INFO ][o.e.x.m.MlDailyMaintenanceService] triggering scheduled [ML] maintenance tasks
+[2018-07-25T07:16:33,633][INFO ][o.e.x.m.a.TransportDeleteExpiredDataAction] [EtmoXbb] Deleting expired data
+[2018-07-25T07:16:37,676][INFO ][o.e.x.m.a.TransportDeleteExpiredDataAction] [EtmoXbb] Completed deletion of expired data
+[2018-07-25T07:16:38,438][INFO ][o.e.x.m.MlDailyMaintenanceService] Successfully completed [ML] maintenance tasks
+[2018-07-25T22:01:34,803][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [EtmoXbb] caught exception while handling client http traffic, closing connection [id: 0xfec19231, L:/0:0:0:0:0:0:0:1:9200 - R:/0:0:0:0:0:0:0:1:43320]
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:?]
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261) ~[netty-buffer-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1106) ~[netty-buffer-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:343) ~[netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:545) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) [netty-transport-4.1.16.Final.jar:4.1.16.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.16.Final.jar:4.1.16.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
+[2018-07-25T22:03:51,456][INFO ][o.e.n.Node               ] [EtmoXbb] stopping ...
+[2018-07-25T22:03:51,488][INFO ][o.e.x.w.WatcherService   ] [EtmoXbb] stopping watch service, reason [shutdown initiated]
+[2018-07-25T22:03:52,061][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/3260] [Main.cc@148] Ml controller exiting
+[2018-07-25T22:03:52,077][INFO ][o.e.n.Node               ] [EtmoXbb] stopped
+[2018-07-25T22:03:52,077][INFO ][o.e.n.Node               ] [EtmoXbb] closing ...
+[2018-07-25T22:03:52,174][INFO ][o.e.n.Node               ] [EtmoXbb] closed
